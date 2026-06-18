@@ -111,7 +111,7 @@ ${sortedDistricts.map((d, i) => {
   <strong>Validation Strategy:</strong> Leave-Division-Out CV (8 folds) — each of 8 Bangladesh divisions held out as test set once<br>
   <strong>Class Distribution:</strong> Red: 50 districts (78.1%) | Yellow: 14 districts (21.9%) | Green: 0 districts (0%)<br>
   <strong>Feature Engineering:</strong> Tower density, digital readiness index, composite stress score, 4G share, income index, subscriber density, affordability index, 8 division dummy variables<br>
-  <strong>Data Sources:</strong> 154 ITU indicators (25 years), BTRC division subscriber data (2022-2025), HIES 2022, BTS tower registry, NTTN fiber capacity, Ramgati field survey data<br>
+  <strong>Data Sources:</strong> 154 ITU indicators (25 years), BTRC division subscriber data (2022-2025), BTRC QoS Data, HIES 2022, BTS tower registry, NTTN fiber capacity, Ramgati field survey data<br>
   <strong>Overfitting Analysis:</strong> Train-validation convergence observed at Fold 6+ (gap < 0.03), no data leakage confirmed via LDO methodology
 </div>
 <h3>Confusion Matrix</h3>

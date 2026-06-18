@@ -173,7 +173,7 @@ function App() {
                     { name: 'Mir Oliul Pasha Taj', role: 'System Architect', color: 'text-orange-400', border: 'border-orange-500/30', bg: darkMode ? 'bg-orange-900/10' : 'bg-orange-50', desc: 'Backend development, Flask API engineering, data pipeline integration, server-side ML inference, news scraping system, and database management.' },
                     { name: 'Tanim Hasan', role: 'Software Engineer (Front End)', color: 'text-cyan-400', border: 'border-cyan-500/30', bg: darkMode ? 'bg-cyan-900/10' : 'bg-cyan-50', desc: 'Frontend development, interactive map design, React component architecture, and visual design system.' },
                     { name: 'Mahmud Refey', role: 'Statistician', color: 'text-purple-400', border: 'border-purple-500/30', bg: darkMode ? 'bg-purple-900/10' : 'bg-purple-50', desc: 'Statistical analysis, ML model evaluation, data preprocessing and scientific validation.' },
-                    { name: 'Abdullah Al Mamun', role: 'Software Developer (Backend)', color: 'text-blue-400', border: 'border-blue-500/30', bg: darkMode ? 'bg-blue-900/10' : 'bg-blue-50', desc: 'Overall system design includes ML pipeline architecture, PID integration, backend engineering, and project strategy.' },
+                    { name: 'Md. Abdullah Al Mamun', role: 'Software Developer (Backend)', color: 'text-blue-400', border: 'border-blue-500/30', bg: darkMode ? 'bg-blue-900/10' : 'bg-blue-50', desc: 'Overall system design includes ML pipeline architecture, PID integration, backend engineering, and project strategy.' },
                   ].map(({ name, role, color, border, bg, desc }) => (
                     <div key={name} className={`rounded-xl p-5 border ${border} ${bg}`}>
                       <div className={`font-bold text-base ${color}`}>{name}</div>
@@ -188,7 +188,7 @@ function App() {
               <div className={`rounded-2xl p-6 border ${darkMode ? 'glass-panel border-slate-700/40' : 'bg-[#faf7f0] border-[#d4cbb8] shadow-sm'}`}>
                 <h3 className={`text-base font-bold mb-4 ${darkMode ? 'text-slate-300' : 'text-slate-700'}`}>Data Sources</h3>
                 <div className="flex flex-wrap gap-2">
-                  {['ITU DataHub (154 indicators)', 'BTRC Division Subscriber Data', 'Bangladesh Bureau of Statistics (HIES 2022)', 'NTTN Fiber Backbone Capacity', 'BTS Tower Registry', 'Ramgati Field Survey Data', 'World Bank Bangladesh', 'TBS News', 'The Daily Star', 'bdnews24'].map(s => (
+                  {['ITU DataHub (154 indicators)', 'BTRC Division Subscriber Data', 'BTRC QoS Data', 'Bangladesh Bureau of Statistics (HIES 2022)', 'NTTN Fiber Backbone Capacity', 'BTS Tower Registry', 'Ramgati Field Survey Data', 'World Bank Bangladesh', 'TBS News', 'The Daily Star', 'bdnews24'].map(s => (
                     <span key={s} className={`text-xs px-3 py-1 rounded-full border ${darkMode ? 'border-slate-700 bg-slate-800/50 text-slate-400' : 'border-[#d4cbb8] bg-[#f0ebe0] text-slate-600'}`}>{s}</span>
                   ))}
                 </div>
