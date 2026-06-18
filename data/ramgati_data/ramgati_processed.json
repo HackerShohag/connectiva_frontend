@@ -1,0 +1,66 @@
+{
+    "meta": {
+        "region": "Ramgati, Lakshmipur",
+        "area_sqkm": 212.63
+    },
+    "raw": {
+        "total_4g_towers": 66,
+        "tower_density": 31.039834454216248,
+        "total_fiber_km": 191.601,
+        "fiber_density": 90.11005032215586,
+        "signal_cqi": 9.1,
+        "dl_throughput": 6.65,
+        "ul_throughput": 0.44,
+        "prb_utilization": 43.67,
+        "srvcc": 81.65
+    },
+    "dimensions": {
+        "internet_access": 58.2,
+        "network_quality": 93.2,
+        "signal_quality": 60.7,
+        "throughput_dl": 33.25,
+        "throughput_ul": 8.8,
+        "infrastructure": 62.1,
+        "fiber_backbone": 90.1,
+        "gender_inclusion": 10.0,
+        "age_inclusion_senior": 65.0,
+        "wifi_adoption": 25.0
+    },
+    "targets": {
+        "internet_access": 80,
+        "network_quality": 98,
+        "signal_quality": 85,
+        "throughput_dl": 80,
+        "throughput_ul": 80,
+        "infrastructure": 100,
+        "fiber_backbone": 100,
+        "gender_inclusion": 70,
+        "age_inclusion_senior": 80,
+        "wifi_adoption": 60
+    },
+    "gaps": {
+        "internet_access": 21.799999999999997,
+        "network_quality": 4.799999999999997,
+        "signal_quality": 24.299999999999997,
+        "throughput_dl": 46.75,
+        "throughput_ul": 71.2,
+        "infrastructure": 37.9,
+        "fiber_backbone": 9.900000000000006,
+        "gender_inclusion": 60.0,
+        "age_inclusion_senior": 15.0,
+        "wifi_adoption": 35.0
+    },
+    "severity_score": 55.2971118447379,
+    "feature_weights": {
+        "internet_access": 0.18,
+        "network_quality": 0.12,
+        "signal_quality": 0.1,
+        "throughput_dl": 0.08,
+        "throughput_ul": 0.12,
+        "infrastructure": 0.1,
+        "fiber_backbone": 0.05,
+        "gender_inclusion": 0.15,
+        "age_inclusion_senior": 0.05,
+        "wifi_adoption": 0.05
+    }
+}
