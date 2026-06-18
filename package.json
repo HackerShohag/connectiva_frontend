@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "connectiva-frontend",
   "private": true,
   "version": "0.1.0",
   "main": "main.cjs",
@@ -79,6 +79,12 @@
       "target": [
         "zip"
       ]
+    }
+  },
+  "overrides": {
+    "react-simple-maps": {
+      "react": "$react",
+      "react-dom": "$react-dom"
     }
   }
 }
