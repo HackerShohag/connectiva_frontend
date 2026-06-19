@@ -132,9 +132,9 @@ export const PolicyRoadmapPanel = () => {
           </div>
         </div>
 
-        {/* BTRC + NTTN quick stats */}
+        {/* BTRC + NTTN + BTS quick stats */}
         {roadmapData && (
-          <div className="grid grid-cols-2 gap-2 mt-3">
+          <div className="grid grid-cols-3 gap-2 mt-3">
             <div className={`rounded-lg p-2 text-xs border ${darkMode ? 'bg-slate-800/40 border-slate-700/30' : 'bg-slate-100 border-slate-300'}`}>
               <div className={`mb-1 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>Subscribers</div>
               <div className={`font-bold ${darkMode ? 'text-white' : 'text-slate-800'}`}>{roadmapData.btrc_data?.total_subscribers_m || 'N/A'}M</div>
@@ -144,6 +144,20 @@ export const PolicyRoadmapPanel = () => {
               <div className={`mb-1 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>Fiber (NTTN)</div>
               <div className={`font-bold ${darkMode ? 'text-white' : 'text-slate-800'}`}>{roadmapData.nttn_data?.ofc_km?.toLocaleString() || 'N/A'} km</div>
               <div className={darkMode ? 'text-slate-500' : 'text-slate-600'}>{roadmapData.nttn_data?.unused_tbps || 0} Tbps unused · {roadmapData.nttn_data?.operators?.length || 0} NTTNs</div>
+            </div>
+            <div className={`rounded-lg p-2 text-xs border ${darkMode ? 'bg-slate-800/40 border-slate-700/30' : 'bg-slate-100 border-slate-300'}`}>
+              <div className={`mb-1 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>Cell Towers</div>
+              {(() => {
+                const op = roadmapData.btrc_data?.dominant_operator || 'GP';
+                const d = roadmapData.bts_data?.[op];
+                const count = d ? (d.BTS_2G + d.NodeB_3G + d.eNodeB_4G).toLocaleString() : 'N/A';
+                return (
+                  <>
+                    <div className={`font-bold ${darkMode ? 'text-white' : 'text-slate-800'}`}>{count}</div>
+                    <div className={darkMode ? 'text-slate-500' : 'text-slate-600'}>{op} Towers (Natl.)</div>
+                  </>
+                );
+              })()}
             </div>
           </div>
         )}
